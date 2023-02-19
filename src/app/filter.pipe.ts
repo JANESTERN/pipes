@@ -19,9 +19,9 @@ export class FilterPipe implements PipeTransform {
         searchitem.push(products)
 
       }
-      return searchitem
+
     }
-     return value
+    return searchitem
   }
 
 }
