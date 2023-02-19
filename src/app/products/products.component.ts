@@ -9,31 +9,32 @@ import { products } from '../interface';
 export class ProductsComponent {
 
   date=new Date(19/2/2023)
+  category=''
   product:products[]=[
     {name:'mouse', 
     description:'this is a great mouse',
     image:'https://ae01.alicdn.com/kf/HTB1N54NKFXXXXbgXFXXq6xXFXXXX/New-arrival-High-quality-JWB80-large-gaming-mouse-7D-OPTICAL-compute-rmouse-Gamming-mice-DPI-3200dpi.jpg',
-     price:'677', 
-     category:'chair'},
+    price:'677', 
+    category:'mouse'},
 
     {name:'chair',
-     description:'this is a great mouse',
+     description:'this is a great chair',
      image:'https://content.la-z-boy.com/Images/product/category/white/large/235401.jpg', price:'300', 
-     category:'mousehab'},
+     category:'chair'},
 
     {name:'mouse',
      description:'this is a great chair',
      image:'https://ae01.alicdn.com/kf/HTB1N54NKFXXXXbgXFXXq6xXFXXXX/New-arrival-High-quality-JWB80-large-gaming-mouse-7D-OPTICAL-compute-rmouse-Gamming-mice-DPI-3200dpi.jpg', 
      price:'300', 
-     category:'mousehab'},
+     category:'mouse'},
 
     {name:'mouse',
      description:'this is a great mouse',
      image:'https://ae01.alicdn.com/kf/HTB1N54NKFXXXXbgXFXXq6xXFXXXX/New-arrival-High-quality-JWB80-large-gaming-mouse-7D-OPTICAL-compute-rmouse-Gamming-mice-DPI-3200dpi.jpg',
       price:'300', 
-      category:'mousehab'},
+      category:'mouse'},
 
-    {name:'mouse', 
+    {name:'car', 
     description:'this is a great mouse. it can work without a battery',
     image:'https://ae01.alicdn.com/kf/HTB1N54NKFXXXXbgXFXXq6xXFXXXX/New-arrival-High-quality-JWB80-large-gaming-mouse-7D-OPTICAL-compute-rmouse-Gamming-mice-DPI-3200dpi.jpg',
      price:'30000', 
@@ -43,7 +44,7 @@ export class ProductsComponent {
      description:'this is a great car. its a very nice car ',
      image:'https://hips.hearstapps.com/hmg-prod/images/2019-honda-civic-sedan-1558453497.jpg?resize=480:*', 
      price:'3000', 
-     category:'mousehab'}
+     category:'car'}
   ]
 
 grestings=new Promise((resolve,reject)=>{
