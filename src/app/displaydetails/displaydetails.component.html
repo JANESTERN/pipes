@@ -1,0 +1,27 @@
+<div *ngIf="data.length>0; else nodata">
+    <div class="displaypersons" *ngFor="let person of data;">
+        <table border="1">
+            <thead>
+                <th>Name</th>
+                <th>Adm</th>
+                <th>Adm</th>
+                <th>Course</th>
+                <tr>
+                    <td>{{person.name}}</td>
+                    <td>{{person.adm}}</td>
+                    <td>{{person.balance}}</td>
+                    <td>{{person.course}}</td>
+                </tr>
+            </thead>
+            <div class="btn">
+                <button>Update Details</button>
+                <button (click)="delete()">Delete Student</button>
+                <button>Complete</button>
+            </div>
+        </table>
+
+    </div>
+</div>
+<ng-template #nodata>
+    <p> No Student.Add one</p>
+</ng-template>

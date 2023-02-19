@@ -1,0 +1,20 @@
+<div class="form_container">
+        <label for="name">Name</label>
+        <input type="text" #name placeholder="Enter name" required><br>
+        <label for="admission">Admision Number</label>
+        <input type="text" #adm><br>
+        <label for="balance">Balance</label>
+        <input type="text" #balance><br>
+        <label for="course">course</label>
+        <select #course>
+          <option value="Computer Science">Computer Science</option>
+          <option value="medicine">Medicine</option>
+          <option value="Agriculture">Electrical Eng</option>
+          <option value="Accounting">Accounting</option>
+        </select>
+        <div class="btn">
+            <button (click)="addStudent(name,balance, adm,course)">Add student</button>
+        </div>     
+</div>
+
+

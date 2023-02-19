@@ -1,0 +1,12 @@
+
+<p>{{date | date:'short'}}</p>
+<h2>{{grestings | async}}</h2>
+<div class="products_container" *ngFor="let products of product">
+    <div class="products_content">
+        <img src="{{products.image}}"alt="">
+        <h1>{{products.name | uppercase}}</h1>
+        <p>{{products.description | shorten:16}}</p>
+        <p>{{products.price | currency:"KSH "}}</p>
+        <p>{{products.category}}</p>
+    </div>
+</div>
